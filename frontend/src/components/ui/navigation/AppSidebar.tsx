@@ -128,18 +128,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   }
   return (
     <Sidebar {...props} className="bg-gray-50 dark:bg-gray-925">
-      <SidebarHeader className={cx("px-3 py-4", isCollapsed && "items-center px-2")}>
-        <div className="flex items-center gap-3">
+      <SidebarHeader className={cx("px-4 py-5", isCollapsed && "items-center px-2")}>
+        <div className="flex items-center">
           {isCollapsed ? (
-            <span className="flex size-9 shrink-0 items-center justify-center">
-              {/* Показываем только иконку (левую часть лого) в свёрнутом виде */}
-              <svg width="36" height="36" viewBox="0 0 175 284" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 196.5C0 244.825 39.175 284 87.5 284L87.5 196.5C87.5 148.175 48.3249 109 0 109L0 196.5Z" fill="#39ACFF" />
-                <path d="M91.1972 109H87.5L87.5 284C135.825 284 175 244.825 175 196.5V192.803C175 146.52 137.48 109 91.1972 109Z" fill="#39ACFF" />
-              </svg>
-            </span>
+            <svg width="32" height="32" viewBox="0 0 175 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 196.5C0 244.825 39.175 284 87.5 284L87.5 196.5C87.5 148.175 48.3249 109 0 109L0 196.5Z" fill="#39ACFF" />
+              <path d="M91.1972 109H87.5L87.5 284C135.825 284 175 244.825 175 196.5V192.803C175 146.52 137.48 109 91.1972 109Z" fill="#39ACFF" />
+            </svg>
           ) : (
-            <Logo className="h-7 w-auto text-gray-950 dark:text-white" />
+            <Logo className="h-9 w-auto text-gray-950 dark:text-white" />
           )}
         </div>
       </SidebarHeader>
