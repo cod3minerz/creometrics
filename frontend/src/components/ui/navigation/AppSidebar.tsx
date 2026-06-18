@@ -139,7 +139,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               </svg>
             </span>
           ) : (
-            <Logo className="h-7 w-auto" />
+            <Logo className="h-7 w-auto text-gray-950 dark:text-white" />
           )}
         </div>
       </SidebarHeader>
